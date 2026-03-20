@@ -1,48 +1,62 @@
-🚀 Autonomous Multi-Agent AI Software Development Team
+Here’s a **clean copy-paste ready `README.md`** (no special blocks, just pure Markdown for GitHub):
 
-An AI-powered system that simulates a real-world software development team using multiple specialized agents (Planner, Developer, Reviewer, QA, and Documentation).
+---
 
-This project demonstrates how LLMs can collaborate as autonomous agents to transform a feature request into production-ready artifacts — including code, tests, and documentation.
+```markdown
+# 🚀 Autonomous Multi-Agent AI Software Development Team
 
-🧠 Overview
+An AI-powered system that simulates a **real-world software development team** using multiple specialized agents (Planner, Developer, Reviewer, QA, and Documentation).
+
+This project demonstrates how **LLMs can collaborate as autonomous agents** to transform a feature request into production-ready artifacts — including code, tests, and documentation.
+
+---
+
+## 🧠 Overview
 
 Given a simple feature request, the system automatically:
 
-📋 Breaks it into development tasks (Planner Agent)
+1. 📋 Breaks it into development tasks (Planner Agent)  
+2. 💻 Generates code (Developer Agent)  
+3. 🔍 Reviews code for issues (Reviewer Agent)  
+4. 🧪 Creates test cases (QA Agent)  
+5. 📚 Generates documentation (Docs Agent)  
 
-💻 Generates code (Developer Agent)
+---
 
-🔍 Reviews code for issues (Reviewer Agent)
+## 🏗️ Architecture
 
-🧪 Creates test cases (QA Agent)
+```
 
-📚 Generates documentation (Docs Agent)
-
-🏗️ Architecture
 User Request
-     ↓
+↓
 Planner Agent → Tasks
-     ↓
+↓
 Developer Agent → Code
-     ↓
+↓
 Reviewer Agent → Issues (JSON)
-     ↓
+↓
 QA Agent → Tests
-     ↓
+↓
 Docs Agent → Documentation
-⚙️ Tech Stack
 
-Backend: FastAPI
+```
 
-LLM: Phi-2 (via HuggingFace Transformers)
+---
 
-Language: Python 3.12
+## ⚙️ Tech Stack
 
-Server: Uvicorn
+- Backend: FastAPI  
+- LLM: Phi-2 (via HuggingFace Transformers)  
+- Language: Python 3.12  
+- Server: Uvicorn  
+- Architecture: Multi-Agent System  
 
-Architecture: Multi-Agent System
+---
 
-📂 Project Structure
+## 📂 Project Structure
+
+```
+
 app/
 ├── agents/
 │   ├── planner_agent.py
@@ -64,26 +78,69 @@ app/
 │   └── cleaner.py
 │
 └── main.py
-🚀 Getting Started
-1. Clone the repository
+
+````
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
 git clone <your-repo-url>
 cd multi-agent-development-team
-2. Create virtual environment
+````
+
+---
+
+### 2. Create virtual environment
+
+```bash
 python -m venv myvenv
 source myvenv/bin/activate   # Mac/Linux
 myvenv\Scripts\activate      # Windows
-3. Install dependencies
+```
+
+---
+
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-4. Run the server
+```
+
+---
+
+### 4. Run the server
+
+```bash
 uvicorn app.main:app --reload
-📡 API Usage
-Endpoint
+```
+
+---
+
+## 📡 API Usage
+
+### Endpoint
+
+```
 POST /build-feature
-Request Body
+```
+
+### Request Body
+
+```json
 {
   "request": "Build a FastAPI todo API with CRUD endpoints"
 }
-Sample Response
+```
+
+---
+
+### Sample Response
+
+```json
 {
   "tasks": "1. Define Todo model...\n2. Create FastAPI app...",
   "code": "from fastapi import FastAPI ...",
@@ -96,55 +153,58 @@ Sample Response
   "tests": "def test_create_todo(): ...",
   "documentation": "API endpoints:\n- GET /todos\n..."
 }
-🧩 Key Features
+```
 
-🤖 Multi-agent collaboration (Planner, Developer, Reviewer, QA, Docs)
+---
 
-🧠 LLM-powered reasoning for each development stage
+## 🧩 Key Features
 
-📦 End-to-end automation from idea → code → tests → docs
+* 🤖 Multi-agent collaboration (Planner, Developer, Reviewer, QA, Docs)
+* 🧠 LLM-powered reasoning for each development stage
+* 📦 End-to-end automation from idea → code → tests → docs
+* 🔍 Structured code review output (JSON)
+* ⚡ FastAPI-based scalable backend
 
-🔍 Structured code review output (JSON)
+---
 
-⚡ FastAPI-based scalable backend
+## ⚠️ Known Limitations
 
-⚠️ Known Limitations
+* LLM outputs may occasionally be inconsistent or verbose
+* Requires prompt tuning for better code quality
+* No persistent memory between agents (yet)
 
-LLM outputs may occasionally be inconsistent or verbose
+---
 
-Requires prompt tuning for better code quality
+## 🔮 Future Enhancements
 
-No persistent memory between agents (yet)
+* Add vector memory (RAG) for context awareness
+* Integrate with GitHub PR automation
+* Add UI dashboard for agent workflow
+* Improve code generation reliability
+* Add execution sandbox for generated code
 
-🔮 Future Enhancements
+---
 
-✅ Add vector memory (RAG) for context awareness
-
-✅ Integrate with GitHub PR automation
-
-✅ Add UI dashboard for agent workflow
-
-✅ Improve code generation reliability
-
-✅ Add execution sandbox for generated code
-
-💡 Why This Project Stands Out
+## 💡 Why This Project Stands Out
 
 This project showcases:
 
-Real-world AI system design (not just API calls)
+* Real-world AI system design (not just API calls)
+* Understanding of multi-agent orchestration
+* Practical use of LLMs in software engineering workflows
+* Strong backend engineering with FastAPI + modular design
 
-Understanding of multi-agent orchestration
+---
 
-Practical use of LLMs in software engineering workflows
-
-Strong backend engineering with FastAPI + modular design
-
-👩‍💻 Author
+## 👩‍💻 Author
 
 Garima Singh
 AI/Backend Developer | Building AI-powered developer tools
 
-⭐ If you found this useful
+---
+
+## ⭐ If you found this useful
 
 Give it a ⭐ on GitHub and share your feedback!
+
+```
